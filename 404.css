@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+Body{
+    background: blanchedalmond;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 50%;
+    height: 90vh;
+    border: solid 4px rgb(75, 182, 225);
+    border-radius: 10px;
+    box-shadow: 0 0 50px white;
+}
+
+main h1{
+    text-align: center;  
+}
+
+main h1 a{
+    font-size: 3rem;
+    text-decoration: none;
+    color: rgb(75, 182, 225);
+}
+
+main h1::first-letter{
+    font-size: 5rem;
+}
+
+main .image_error{
+    margin: 5px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+   animation: rotate 2s infinite; 
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    30%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+
+main .button{
+    padding: 10px 20px;
+    background: rgb(75, 182, 225);
+    border-radius: 15px;
+    border: solid 2px white;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: blanchedalmond;
+    position: absolute;
+    left: 44%;
+    bottom: 20%;
+    transition: .25s ease-out;
+}
+
+main .button:hover{
+    transform: scale(1.07);
+}
+
+.page_not_found h2{
+    text-align: center;
+    font-size: 5rem;
+    color: rgb(75, 182, 225);
+}
+
+.page_not_found h3{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(40, 170, 222);
+}
+
+p{
+    position: absolute;
+    right: 44%;
+    bottom: 10%;
+}
